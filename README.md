@@ -6,21 +6,21 @@ This repository includes the design and synthesis of RTL codes with the use of t
 
 ## Table of contents
 --[DAY 1](#DAY-1)
-* [CHIPSPIRIT](#CHIPSPIRIT)
+* [INTERACTION WITH CHIPSPIRIT FOUNDER - ](#CHIPSPIRIT)
 * [LAB SETUP](#LAB-SETUP)
 * [WAVEFORM VIEWER gtkwave](#gtkwave-waveform-viewer)
 * [SIMULATOR iverilog](#Simulator-iverilog)
 * [YOSYS](#YOSYS)
 * [LIBRARY FILES](#LIBRARY-FILES)
 ## DAY 1
- The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
- There are many open source tools available for the front-end RTL design. The list of tools used in this repo are mentioned below
+The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
+
+### CHIPSPIRIT
+Chipspirit has collaborated with Indian Navy to work on cutting edge security applications under the leadership of Mohan Jindal who has an extensive and rich experience in VLSI design, verification and implementation.
 
 ### LAB SETUP
  
- * create a directory 'VLSI' in the home path.
- *  
- 
+ * create a directory 'VLSI' in the home path. 
 ```
  mkdir VLSI/;cd VLSI/;ls
 ```
@@ -29,6 +29,7 @@ This repository includes the design and synthesis of RTL codes with the use of t
  ```
  git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorksop.git
  ```
+ 
 * files present in the directory
 
  
