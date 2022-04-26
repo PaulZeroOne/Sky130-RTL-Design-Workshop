@@ -5,20 +5,20 @@ This repository includes the design and synthesis of RTL codes with the use of t
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/raw/main/Capture.PNG)
 
 ## Table of contents
---[DAY 1](#DAY-1)
-* [INTERACTION WITH CHIPSPIRIT FOUNDER - ](#CHIPSPIRIT)
-* [LAB SETUP](#LAB-SETUP)
-* [WAVEFORM VIEWER gtkwave](#gtkwave-waveform-viewer)
-* [SIMULATOR iverilog](#Simulator-iverilog)
-* [YOSYS](#YOSYS)
-* [LIBRARY FILES](#LIBRARY-FILES)
+[DAY 1](#DAY-1)
+* [Interaction with Chipspirit founder - Mohan Jindal](#Chipspirit)
+* [Lab Setup](#Lab-Setup)
+* [Waveform Viewer - gtkwave](#Waveform-Viewer-gtkwave)
+* [Simulator -  iverilog](#Simulator-iverilog)
+* [Synthesis - yosys](#Synthesis-yosys)
+* [Library Files](#Library-Files)
 ## DAY 1
 The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
 
-### CHIPSPIRIT
+### Chipspirit
 Chipspirit has collaborated with Indian Navy to work on cutting edge security applications under the leadership of Mohan Jindal who has an extensive and rich experience in VLSI design, verification and implementation.
 
-### LAB SETUP
+### Lab Setup
  
  * create a directory 'VLSI' in the home path. 
 ```
@@ -36,7 +36,7 @@ Chipspirit has collaborated with Indian Navy to work on cutting edge security ap
  ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.1.PNG)
  
  
- ### gtkwave waveform viewer
+ ### Waveform Viewer gtkwave
  
  The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus where the functionality of the RTL design can be justified.
  
@@ -119,7 +119,7 @@ gtkwave testbenchfile.vcd
   
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.11.PNG)
 
-### YOSYS
+### Synthesis yosys
 
 Synthesizer is the tool which converts the RTL to the netlist. In this flow we use yosys as the synthesizer.
 
@@ -167,7 +167,7 @@ mux realied in terms of the library mentioned.
 
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/22.PNG)
 
-### LIBRARY FILES
+### Library Files
 .lib is the collection of all the standard cell. contains various versions of the same gates (slow, fast, medium speed). It will be rich enough to implement any logic function. The requirement of different flavors of gates is due to the combinational delay of the logic circuit determines the speed of the circuit.
 
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/2.2.PNG)
