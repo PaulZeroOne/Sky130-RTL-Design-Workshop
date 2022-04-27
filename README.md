@@ -70,9 +70,9 @@ The primary inputs given to the testbench where the design is instantiated from 
  #### Simulation Flow
  
 The output of the simulator is a .vcd file where vcd stands for value change dump. The simulator looks for changes in the input testvector hence the format .vcd occurs.
- 
+ <p align="center">
  ![github-small](https://user-images.githubusercontent.com/89927660/131877209-116b4362-b56d-46ed-9f42-c7981a027158.png)
- 
+ </p>
  #### Syntax
   * source the iverilog tool and mention the design file and testbench file.
  ```
@@ -88,63 +88,17 @@ A *design.vcd* file will be dumped, which is going to be used to loaded into gtk
  
  ### Waveform Viewer gtkwave
  
- The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus where the functionality of the RTL design can be justified.
+ The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus from where the functionality of the RTL design can be verified.
  
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/gtk1.PNG)
+ * launch the tool.
+ ```gtkwave design.vcd ``` 
  
- files present in the directories cloned
+ ![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/gtkwave.PNG)
  
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.4.PNG)
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.5.PNG)
  
- sky130 library will be used for the synthesis
  
- verilog files conatins all the source and the testbench files which will be used for the lab
- 
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.6.PNG)
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.7.PNG)
 
 
- 
- #### LAB
-  
-  list of verilog files available for lab
-  
-  ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.6.PNG)
-  
-  ```
-  ls // views all the files present in the current working directory
-  ```
-  
-  * simulation of the RTL code
-  
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.9.PNG)
- ```
-  iverilog designfile testbenchfile
-  ls
-  ./a.out
- ```
- * gtkwaveform viewer
-The inputs and the outputs can be dragged and dropped in the viewer. To see the entire observation on the single window click zoomfit. To look for the transition of the signal use the arrow for forward and the backward transitions. This can be used for the evaluation of the design.
- 
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.10.PNG)
- 
- ```
-gtkwave testbenchfile.vcd
-```
- 
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/gtk1.PNG)
-  
-  The waveform viewer depicts the functionality of the desing with respect to the stimulus provided.
-  
-  we have used the multipler code for the simulation.If there is select output follows input1 and if there is no select the output folows input0
-  
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.12.PNG)
-  
-  Testbench for the multiplexer : the testbench instantiates the design
-  dut stands for design under test
-  
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.11.PNG)
 
 ### Synthesis yosys
 
