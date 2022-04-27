@@ -50,7 +50,10 @@ In this workshop, we have used *iverilog*, which is a free open source simulator
 #### Working
 It mainly relays on the change in the input. If there are is no change in the input test vector then there will be no change in the output, the simulator will not eveluate the output in this condition.
 
-* We can view and edit verilog files using vim editor as ```vim design.v ```
+* We can view and edit verilog files using vim editor as 
+```
+vim design.v 
+```
  
  ##### Vim Editor Important Shortcuts 
 | Shortcut  | Description |
@@ -91,7 +94,9 @@ A *design.vcd* file will be dumped, which is going to be used to loaded into gtk
  The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus from where the functionality of the RTL design can be verified.
  
  * launch the tool.
- ```gtkwave design.vcd ``` 
+ ```
+ gtkwave design.vcd 
+ ``` 
  
  ![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/gtkwave.PNG)
  
