@@ -33,7 +33,7 @@ Chipspirit has collaborated with Indian Navy to work on cutting edge security ap
 * files present in the directory
 
  
- ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.1.PNG)
+ ![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/files_repo.PNG)
  
  
  ### Waveform Viewer gtkwave
