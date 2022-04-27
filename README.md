@@ -50,12 +50,16 @@ In this workshop, we have used *iverilog*, which is a free open source simulator
 #### Working of the simulator
 It mainly relays on the change in the input. If there are is no change in the input test vector then there will be no change in the output, the simulator will not eveluate the output in this condition.
 We can view and edit verilog files using vim editor as ```vim design.v ```
- ##### Vim Editor
-``` * exit - exit file
- * wq - write and exit
- * G - end of buffer
- * gg - beignning of buffer
-```
+ ##### Vim Editor Important Shortcuts 
+| Shortcut  | Description |
+| ------------- | ------------- |
+| :  | enter command mode  |
+| i  | enter insert mode  |
+| exit  | exit file  |
+|  wq | write and exit  |
+|  G | end of bufferl  |
+|  gg | beignning of buffer  |
+
  ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/123.PNG)
  
 The primary inputs given to the testbench where the design is instantiated from the stimulus generator and the outputs are verified by the stimulus observer, the testbench doesnot have primary input and primary output
