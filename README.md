@@ -259,6 +259,7 @@ flaten
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.7.PNG)
 
 
-## CONTACT
-## ACKNOWLEDGEMENT
+### CONTACT
+### ACKNOWLEDGEMENTS
 [Kunal Ghosh, Co-Founder (VSD Corp. Pvt Ltd)](https://github.com/kunalg123)
+[Shon Taware, TA (VSD Corp. Pvt Ltd)]
