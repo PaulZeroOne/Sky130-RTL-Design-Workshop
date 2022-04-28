@@ -17,6 +17,11 @@ This repository includes the design and synthesis of RTL codes with the use of t
 * [Hierarchical and Flat Synthesis](#Hierarchical-And-Flat-Synthesis)
 * [Flip Flop Coding Styles](#Flip-Flop-Coding-Styles)
 
+[DAY 3](#DAY-3)
+* [Combinational Logic Optimization](#Combinational-Logic-Optimization)
+* [Sequential Logic Optimization](#Sequential-Logic-Optimization)
+* [Sequential Logic Optimization for Unused Outputs](#Sequential-Logic-Optimization-for-Unused-Outputs)
+
 ## DAY 1
 The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
 
