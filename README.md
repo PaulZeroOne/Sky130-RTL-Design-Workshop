@@ -120,18 +120,36 @@ The primary inputs and the ouput remains same thus the same testbench can be use
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/2.1.PNG)
 commands -
 * invoke yosys
+ ```
+ yosys
+```
 * read the library with the relative path
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+```
 * read the design (successfully done should come)
+````
+read_verilog designmodule.v
+````
 * synth -top moduletosynthesis
+````
+synth -top modulename
+````
 * generate the netlist (abc -converts the RTL to gate specified in the library)
+````
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+````
 * show - graphical version of the logic realized
 ```
-yosys
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
-read_verilog designmodule.v
-synth -top modulename
-abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 show
+```
+* write_verilog - text version of the logic realized
+```
+write_verilog modulename_netlist.v
+!gvim modulename_netlist.v
+```
+* exit
+```
 exit
 ```
 
@@ -140,18 +158,6 @@ tt - typical
 025C-temperature
 1v80-voltage
 PVT - Process Voltage Temperature
-
-!github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.13.PNG)
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.14.PNG)
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.15.PNG)
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.16.PNG)
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.17.PNG)
-provides the informantion regarding the internal wires, memory, inputs and the ouputs
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/1.18.PNG)
-
-mux realied in terms of the library mentioned.
-
-![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/22.PNG)
 
 ### Library Files
 .lib is the collection of all the standard cell. contains various versions of the same gates (slow, fast, medium speed). It will be rich enough to implement any logic function. The requirement of different flavors of gates is due to the combinational delay of the logic circuit determines the speed of the circuit.
