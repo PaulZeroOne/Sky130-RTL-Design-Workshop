@@ -12,6 +12,11 @@ This repository includes the design and synthesis of RTL codes with the use of t
 * [Waveform Viewer - gtkwave](#Waveform-Viewer-gtkwave)
 * [Synthesis - yosys](#Synthesis-yosys)
 * [Library Files](#Library-Files)
+* 
+[DAY 2](#DAY-2)
+* [Hierarchical and Flat Synthesis](#Hierarchical-And-Flat-Synthesis)
+* [Flip Flop Coding Styles](#Flip-Flop-Coding-Styles)
+
 ## DAY 1
 The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
 
@@ -171,7 +176,7 @@ tclk is the minimum clk period needed and fclk will be the maximum clk frequency
 
 #### Naming Syntax
 
-```sky130_fd_sc__tt_025C_1v80.lib```
+```sky130_fd_hd_sc__tt_025C_1v80.lib```
 fd-foundary
 tt - typical
 025C-temperature
@@ -180,9 +185,71 @@ PVT - Process Voltage Temperature
 
 #### Requirement of Slow cells 
 
-To ensure the absence of hold related time issues in the flop b there is requiremtn of slow cells, where the delay should be minimum. Thus we require fast cells to meet the performance and slow cells to meet the hold. The load in the circuits is the capacitor, the faster the charging and the discharging the faster the circuit operates.
+To ensure the absence of hold related time issues in the flop b there is requirement of slow cells, where the delay should be minimum. Thus we require fast cells to meet the performance and slow cells to meet the hold. The load in the circuits is the capacitor, the faster the charging and the discharging the faster the circuit operates.
 * wider transistors provide low delay - more area and power consumption
 * narrow transistors provide more delay - less area and power consumption
 
-more use of slow cells - sluggish performcne
-more use of fast cells - hold violationns
+more use of slow cells - sluggish performance
+more use of fast cells - hold violations
+
+## DAY 2
+
+###### Hierarchical and FLat Synthesis 
+
+* submodule2
+
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/31.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/40.PNG)
+```
+gedit multiple_module.v
+```
+submodule1 - and gate
+submodule2 - or gate
+multiple module -instantiation of submodules
+* multiple module
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/32.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/33.PNG)
+
+```
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+read_verilog multiple_module.v
+synth -top multiple_module
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
+show
+exit
+```
+```
+write_verilog -noattr multiple_module_hier.v
+gedit multiple_module_hier.v
+```
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/34.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/35.PNG)
+
+The hierachail desing is preserved.
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/hie.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/37.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/38.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/39.PNG)
+
+
+```
+flaten
+```
+
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/36.PNG)
+
+### Flip Flop Coding Styles
+
+
+
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3331.PNG)
+
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.1.PNG)
+
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.2.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.3.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.4.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.5.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.6.PNG)
+![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.7.PNG)
