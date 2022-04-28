@@ -12,7 +12,7 @@ This repository includes the design and synthesis of RTL codes with the use of t
 * [Waveform Viewer - gtkwave](#Waveform-Viewer-gtkwave)
 * [Synthesis - yosys](#Synthesis-yosys)
 * [Library Files](#Library-Files)
-* 
+
 [DAY 2](#DAY-2)
 * [Hierarchical and Flat Synthesis](#Hierarchical-And-Flat-Synthesis)
 * [Flip Flop Coding Styles](#Flip-Flop-Coding-Styles)
@@ -192,9 +192,9 @@ To ensure the absence of hold related time issues in the flop b there is require
 more use of slow cells - sluggish performance
 more use of fast cells - hold violations
 
-## DAY 2
 
-###### Hierarchical and FLat Synthesis 
+## DAY 2
+### Hierarchical and FLat Synthesis 
 
 * submodule2
 
@@ -239,14 +239,10 @@ flaten
 
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/36.PNG)
 
+
 ### Flip Flop Coding Styles
-
-
-
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3331.PNG)
-
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.1.PNG)
-
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.2.PNG)
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.3.PNG)
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.4.PNG)
