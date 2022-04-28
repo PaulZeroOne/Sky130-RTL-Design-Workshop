@@ -261,4 +261,4 @@ flaten
 
 ## CONTACT
 ## ACKNOWLEDGEMENT
-![Kunal Ghosh, Founder](https://github.com/kunalg123)
+[Kunal Ghosh, Co-Founder (VSD Corp. Pvt Ltd)](https://github.com/kunalg123)
