@@ -123,6 +123,7 @@ commands -
  ```
  yosys
 ```
+![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/yosys.PNG)
 * read the library with the relative path
 ```
 read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
@@ -131,10 +132,12 @@ read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 ````
 read_verilog designmodule.v
 ````
+![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/yosysss.PNG)
 * synth -top moduletosynthesis
 ````
 synth -top modulename
 ````
+![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/stats.PNG)
 * generate the netlist (abc -converts the RTL to gate specified in the library)
 ````
 abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
@@ -143,11 +146,13 @@ abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 ```
 show
 ```
+![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/show.PNG)
 * write_verilog - text version of the logic realized
 ```
 write_verilog modulename_netlist.v
 !gvim modulename_netlist.v
 ```
+![github-small](https://github.com/PaulZeroOne/Sky130-RTL-Design-Workshop/blob/main/Images/netlist.PNG)
 * exit
 ```
 exit
