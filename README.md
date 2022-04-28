@@ -22,6 +22,9 @@ This repository includes the design and synthesis of RTL codes with the use of t
 * [Sequential Logic Optimization](#Sequential-Logic-Optimization)
 * [Sequential Logic Optimization for Unused Outputs](#Sequential-Logic-Optimization-for-Unused-Outputs)
 
+[CONTACT](#CONTACT)
+[ACKNOWLEDGEMENTS](#ACKNOWLEDGEMENTS)
+
 ## DAY 1
 The first day of the RTL Design workshop covers the simaulation part of the RTL design along with a brief description about the usage of design tools such as iverilog, gtkwave and yosys. It also provides a detailed descriptive note on the SkyWater130 library used. 
 
@@ -254,3 +257,8 @@ flaten
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.5.PNG)
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.6.PNG)
 ![github-small](https://github.com/srimathiramasamy/Sky130-RTL-Design-and-Synthesis/blob/main/3.7.PNG)
+
+
+## CONTACT
+## ACKNOWLEDGEMENT
+![Kunal Ghosh, Founder](https://github.com/kunalg123)
