@@ -261,5 +261,5 @@ flaten
 
 ### CONTACT
 ### ACKNOWLEDGEMENTS
-[Kunal Ghosh, Co-Founder (VSD Corp. Pvt Ltd)](https://github.com/kunalg123)
-[Shon Taware, TA (VSD Corp. Pvt Ltd)]
+* [Kunal Ghosh, Co-Founder (VSD Corp. Pvt Ltd)](https://github.com/kunalg123)
+* [Shon Taware, TA (VSD Corp. Pvt Ltd)]()
