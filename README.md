@@ -58,7 +58,7 @@ Chipspirit has collaborated with Indian Navy to work on cutting edge security ap
 * MPSim
 * ISE Simulator
 
-In this workshop, we have used *iverilog*, which is a free open source simulator.
+In this workshop, we have used *iVerilog*, which is a free open source simulator. iVerilog in short to [Icarus Verilog](http://iverilog.icarus.com/) is an open source toolchain for simulation and synthesis. Although it is used only for simulation due to it's potential advantages Yosys brings as a synthesis tool (*more details in later parts*). iVerilog frameowrk requires the RTL desgin file and a test bench file for simulation.  
 
 #### Working
 It mainly relays on the change in the input. If there are is no change in the input test vector then there will be no change in the output, the simulator will not eveluate the output in this condition.
@@ -105,7 +105,7 @@ A *design.vcd* file will be dumped, which is going to be used to loaded into gtk
  
  ### Waveform Viewer gtkwave
  
- The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus from where the functionality of the RTL design can be verified.
+The tool for viewing the waveform is gtkwaveform viewer, where the window pops up containing the stimulus from where the functionality of the RTL design can be verified. [GTKWave](http://gtkwave.sourceforge.net/) is an open source tool for visualizing the signal dumps in .vcd/.lxt formats.  
  
  * launch the tool.
  ```
